@@ -58,9 +58,9 @@ def take_action(i,Pi_buddy):       # This function desides what action has to be
         elif 'light'in i:
             GPIO.output(_LIGHT,True)                  # ON the bulb
             seg1 = 'Light'
-        elif ('a.c.'in i) or ('ac ' in i) or ('air conditionar' in i):
+        elif 'a.c.'in i:
             GPIO.output(_AC,True)                     # ON the ac
-            seg1 = 'air conditionar'
+            seg1 = 'air conditioner'
         else:
             Pi_buddy.direct_messages.new(user=me,text="Incomplete??")
             return
@@ -72,9 +72,9 @@ def take_action(i,Pi_buddy):       # This function desides what action has to be
         elif 'light'in i:
             GPIO.output(_LIGHT,False)                # OFF the bulb
             seg1 = 'Light'
-        elif ('a.c.'in i):
+        elif 'a.c.'in i:
             GPIO.output(_AC,False)                   # OFF the ac
-            seg1 = 'air conditionar'
+            seg1 = 'air conditioner'
         elif('all' in i):
             GPIO.output(_FAN,False)
             GPIO.output(_LIGHT,False)
