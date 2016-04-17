@@ -18,9 +18,9 @@ _FAN = 2           # GPIO no for FAN output
 _LIGHT = 3	   # GPIO no for LIGHT output
 _AC = 4            # GPIO no for A.C. output
  
-def get_temp():                            # Function that returns the value of current room temperature           
+def get_temp():                        # Function that returns the value of current room temperature           
         spi = spidev.SpiDev()
-        spi.open(0,0)                      
+        spi.open(0,0)                  # Edit this function to work with your ADC              
         raw=(spi.xfer([1]))
         tmpC=((raw[0]*256*4)/1000)
         return(tmpC-5)
