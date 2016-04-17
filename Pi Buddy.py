@@ -6,8 +6,8 @@ import spidev
 import RPi.GPIO as GPIO
 
 
-me = "Your twitter handle"
-my_device = 'Your device twitter handle'
+me = "Your twitter handle Username"
+my_device = 'Your device twitter handle Username'
 
 Cns_key = "Consumer Key"
 Cns_sec = "Consumer Secret"
