@@ -22,6 +22,7 @@ def get_temp():                        # Function that returns the value of curr
         spi = spidev.SpiDev()
         spi.open(0,0)                  # Edit this function to work with your ADC              
         raw=(spi.xfer([1]))
+        raw=(spi.xfer([1]))
         tmpC=((raw[0]*256*4)/1000)
         return(tmpC-5)
 
