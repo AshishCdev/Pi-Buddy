@@ -17,7 +17,6 @@ Since connecting all the electronics may lead to misconnections resuilts damadge
 1. GPIO 02 - FAN
 2. GPIO 03 - LIGHT
 3. GPIO 04 - A.C.
-
 Prefer this diagram for GPIO allocation https://www.element14.com/community/servlet/JiveServlet/previewBody/73950-102-9-339300/pi3_gpio.png
 
 #Setting up the Software
