@@ -25,8 +25,8 @@ def get_temp():                            # Function that returns the value of 
         tmpC=((raw[0]*256*4)/1000)
         return(tmpC-5)
 
-def slice_rsponc(main_string):         # If the response from the user contains two tasks, this function divides and returns them as individual
-    main_string=main_string.lower()
+def slice_rsponc(main_string):          # If the response from the user contains two tasks, 
+    main_string=main_string.lower()     # this function divides and returns them as individual
     sl_indx = 0
     if ' and ' in main_string:
         sl_indx = main_string.find('and')
@@ -43,7 +43,8 @@ def take_action(i,Pi_buddy):       # This function desides what action has to be
         LIGHT = GPIO.input(_LIGHT)
         AC = GPIO.input(_AC)
         Pi_buddy.direct_messages.new(user=me,text= ("FAN = " + status[FAN]+"\nLight = "+
-                                             status[LIGHT]+"\nAC = "+status[AC]+"\nTemperature = "+str(get_temp())+unichr(176)+'C'))
+                                             status[LIGHT]+"\nAC = "+status[AC]+"\nTemperature = "+
+                                              str(get_temp())+unichr(176)+'C'))
         return
     elif 'temp' in i or 'temperature' in i:
         Pi_buddy.direct_messages.new(user=me,text='It is '+str(get_temp())+unichr(176)+'C')
