@@ -13,11 +13,11 @@ Simple Raspberry pi controlled IOT based home automation project that will allow
 3. Generate all your API keys. This will provide four API keys- Consumer Key, Consumer Secret, 	Access Token and Access Token Secret.
 
 #Setting up the hardwares
-Since connecting all the electronics may lead to misconnections resuilts damadge to GPIO.The relay board(module) is recommended.
-Use GPIOs-
+Since connecting all the electronics may lead to misconnections resuilts damadge to GPIO.The relay board(module) is recommended.Used GPIOs
 1. GPIO 02 - FAN
 2. GPIO 03 - LIGHT
 3. GPIO 04 - A.C.
+
 Prefer this diagram for GPIO allocation https://www.element14.com/community/servlet/JiveServlet/previewBody/73950-102-9-339300/pi3_gpio.png
 
 #Setting up the Software
