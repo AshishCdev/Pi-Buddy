@@ -27,7 +27,7 @@ Prefer this diagram for GPIO allocation https://www.element14.com/community/serv
 4. Enter your API keys, you just have got from the twitter and save this file. Also enter the twitter handle accounts of        your's and your Pi buddy app's. Now save this file.
 5. Now set this script at the startup so that the program will run automatically at startup without logging in. In order to do that open the terminal and type-
    1.sudo nano /etc/rc.local
-   2.This will open the file to edit. Add this line where comments get end "sudo python /home/pi/Pi-Buddy/Pi\ Buddy.py"
+   2.This will open the file to edit. Add this line just above the exit0 "python /home/pi/Pi-Buddy/Pi\ Buddy.py &"
  Save and restart. As the Application will start, it will send "Hey,How Can I help you?" and you can control your home appliances at configured GPIO.
    
 
