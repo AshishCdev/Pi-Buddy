@@ -14,7 +14,7 @@ Simple Raspberry pi controlled IOT based home automation project that will allow
 
 #Setting up the hardwares
 Since connecting all the electronics may lead to misconnections resuilts damadge to GPIO.The relay board(module) is recommended. GPIO 02 - FAN, GPIO 03 - LIGHT, GPIO 04 - A.C.
-Prefer this diagram for GPIO allocation https://www.element14.com/community/servlet/JiveServlet/previewBody/73950-102-9-339300/pi3_gpio.png
+Prefer this diagram for GPIO allocation https://ms-iot.github.io/content/images/PinMappings/RP2_Pinout.png
 
 #Setting up the Software
 1. login to your Raspberry Pi and enable SPI module by entering raspi-config in the terminal.
