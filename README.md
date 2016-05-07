@@ -30,5 +30,6 @@ Prefer this diagram for GPIO allocation https://ms-iot.github.io/content/images/
    2.This will open the file to edit. Add this line just above the exit0 "python /home/pi/Pi-Buddy/Pi\ Buddy.py &"
  Save and restart. As the Application will start, it will send "Hey,How Can I help you?" and you can control your home appliances at configured GPIO.
    
-
+For demo and more detail
+http://arm-tutorials.com/2016/04/20/pi-buddy-twitter-based-home-automation/
 
